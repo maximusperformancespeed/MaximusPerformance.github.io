@@ -55,10 +55,6 @@ h6 {
   color: rgba(255, 255, 255, 0.7);
 }
 
-section {
-  padding: 8rem 0;
-}
-
 .section-heading {
   margin-top: 0;
 }
@@ -88,6 +84,18 @@ img::selection {
 img::-moz-selection {
   color: #fff;
   background: transparent;
+}
+
+.row {
+  margin: 2em;
+}
+
+#carousel {
+  color: darkgray;
+}
+
+.content h1 {
+  font-size: 3rem;
 }
 
 #mainNav {
@@ -176,8 +184,6 @@ img::-moz-selection {
 }
 
 header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
   background-image: url("../img/header.jpg");
   background-position: center center;
   background-size: cover;
@@ -188,15 +194,14 @@ header.masthead hr {
   margin-bottom: 30px;
 }
 
-header.masthead h1 {
-  font-size: 2rem;
-}
-
 header.masthead p {
   font-weight: 300;
 }
 
 @media (min-width: 768px) {
+  header.masthead {
+    height: 100vh;
+  }
   header.masthead p {
     font-size: 1.15rem;
   }
@@ -209,13 +214,20 @@ header.masthead p {
     padding-top: 0;
     padding-bottom: 0;
   }
-  header.masthead h1 {
+}
+
+header.masthead-title h1 {
+  font-size: 2rem;
+}
+
+@media (min-width: 992px) {
+  header.masthead-title h1 {
     font-size: 3rem;
   }
 }
 
 @media (min-width: 1200px) {
-  header.masthead h1 {
+  header.masthead-title h1 {
     font-size: 4rem;
   }
 }

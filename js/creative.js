@@ -1,4 +1,24 @@
 (function($) {
+
+  // Word carousel on landing page
+  var words = [
+    'Speed',
+    'Confidence',
+    'Durability',
+    'Focus',
+    'Nutrition',
+    'Coordination',
+    'Power',
+    'Strength',
+  ];
+  var count = 0;
+  setInterval(function(){
+        $('#carousel').fadeOut(function(){
+            $(this).html(words[count=(count+1)%words.length]).fadeIn();
+        });
+    }, 3000);
+
+
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
@@ -8,7 +28,7 @@
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 56)
+          scrollTop: (target.offset().top)
         }, 1000, "easeInOutExpo");
         return false;
       }

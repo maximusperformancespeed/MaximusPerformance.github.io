@@ -48,9 +48,6 @@ h6 {
   color: fade-out($white, .3);
 }
 
-section {
-  padding: 8rem 0;
-}
 
 .section-heading {
   margin-top: 0;
@@ -76,4 +73,18 @@ img::selection {
 img::-moz-selection {
   color: $white;
   background: transparent;
+}
+
+.row {
+  margin: 2em;
+}
+
+#carousel {
+  color: rgb(169, 169, 169);
+}
+
+.content {
+  h1 {
+    font-size: 3rem
+  }
 }
