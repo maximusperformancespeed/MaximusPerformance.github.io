@@ -102,7 +102,7 @@ p {
   font-family: 'Open Sans','Helvetica Neue',Arial, sans-serif;
 }
 
-.border {
+.border-content {
   border: 1px solid #161616 !important;
   padding: 1em;
 }
