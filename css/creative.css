@@ -25,13 +25,13 @@ hr.light {
 }
 
 a {
-  color: red;
+  color: grey;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 a:hover {
-  color: #f05f40;
+  color: darkgray;
 }
 
 h1,
@@ -98,6 +98,15 @@ img::-moz-selection {
   font-size: 3rem;
 }
 
+p {
+  font-family: 'Open Sans','Helvetica Neue',Arial, sans-serif;
+}
+
+.border {
+  border: 1px solid #161616 !important;
+  padding: 1em;
+}
+
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: #fff;
@@ -152,15 +161,15 @@ img::-moz-selection {
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
     color: #fff;
   }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link {
+  #mainNav .navbar-nav > li.nav-item > i.nav-link {
     padding: 0.5rem 1rem;
   }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link,
-  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+  #mainNav .navbar-nav > li.nav-item > i.nav-link,
+  #mainNav .navbar-nav > li.nav-item > i.nav-link:focus {
     color: rgba(255, 255, 255, 0.7);
   }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
-  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+  #mainNav .navbar-nav > li.nav-item > i.nav-link:hover,
+  #mainNav .navbar-nav > li.nav-item > i.nav-link:focus:hover {
     color: #fff;
   }
   #mainNav.navbar-shrink {
@@ -173,12 +182,12 @@ img::-moz-selection {
   #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
     color: #f05f40;
   }
-  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
-  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > i.nav-link,
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > i.nav-link:focus {
     color: #212529;
   }
-  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
-  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > i.nav-link:hover,
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > i.nav-link:focus:hover {
     color: #F05F40;
   }
 }
@@ -187,6 +196,7 @@ header.masthead {
   background-image: url("../img/header.jpg");
   background-position: center center;
   background-size: cover;
+  height: 100vh;
 }
 
 header.masthead hr {
@@ -217,18 +227,20 @@ header.masthead p {
 }
 
 header.masthead-title h1 {
-  font-size: 2rem;
+  font-size: 3rem;
+  text-align: center;
 }
 
 @media (min-width: 992px) {
   header.masthead-title h1 {
-    font-size: 3rem;
+    text-align: left;
   }
 }
 
 @media (min-width: 1200px) {
   header.masthead-title h1 {
     font-size: 4rem;
+    text-align: left;
   }
 }
 
